@@ -1,6 +1,34 @@
-import React from "react";
+"use client"
+import React, {useEffect, useState} from "react";
+import Avatars from './avatars'
 
 const leaderboard = () => {
+
+  const [avatar, setAvatar] = useState([]);
+
+  const getBrands = async () => {
+
+    const baseUri = process.env.NEXT_PUBLIC_URI || 'https://app.myriadflow.com';
+
+    const avatar = await fetch(`${baseUri}/avatars/all`, {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json'
+			}
+			});
+
+		const avatardata = await avatar.json();
+
+		console.log("avatar", avatardata);
+
+    setAvatar(avatardata);
+	}
+
+	useEffect(() => {
+		getBrands()
+	}, [])
+
+
   return (
     <div>
       <div
@@ -12,7 +40,7 @@ const leaderboard = () => {
       >
 
         <div
-          className="text-center text-4xl font-bold"
+          className="text-center font-bold"
           style={{
             background:
               "linear-gradient(to right, #F45EC1 , #F45EC1 , #4EB9F3, #4EB9F3)",
@@ -22,11 +50,19 @@ const leaderboard = () => {
             paddingTop: "20px",
             paddingBottom: "20px",
             textAlign: "center",
+            fontSize:'30px'
           }}
         >
           More than NFTs.
         </div>
       </div>
+
+      <div className='mt-10 flex' style={{ gap: '40px', flexWrap: 'wrap', justifyContent:'center' }}>
+        {avatar?.slice(0, 8).map((nft, index) => (
+          <Avatars key={index} nft={nft} />
+        ))}
+      </div>
+
     </div>
   );
 };
