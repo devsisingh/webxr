@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from "react";
 import Avatars from './avatars'
 
-const leaderboard = () => {
+const Leaderboard = () => {
 
   const [avatar, setAvatar] = useState([]);
 
@@ -67,4 +67,4 @@ const leaderboard = () => {
   );
 };
 
-export default leaderboard;
+export default Leaderboard;
