@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import MostLoved from '../components/mostLoved'
 import MostRecently from '../components/mostRecently'
 import LeaderBoard from '../components/leaderboard'
@@ -108,10 +109,10 @@ export default function Home() {
 
         </div>
         <div style={{display:'flex', gap:'40px', fontSize:'20px', color:'white'}} className="mt-6">
-<div>Home</div>
-<div>Discover</div>
-<div>Studio</div>
-<div>WebXR</div>
+<Link href="https://webxr-3d.vercel.app">Home</Link>
+<Link href="https://discover-two.vercel.app" target="_blank">Discover</Link>
+<Link href="https://studio-one-sigma.vercel.app" target="_blank">Studio</Link>
+<Link href="https://webxr-3d.vercel.app" target="_blank">WebXR</Link>
         </div>
         <div className="mt-6">
             <w3m-button />
