@@ -109,7 +109,7 @@ export default function Home() {
 
         </div>
         <div style={{display:'flex', gap:'40px', fontSize:'20px', color:'white'}} className="mt-6">
-<Link href="https://webxr-3d.vercel.app">Home</Link>
+<Link href="https://myriadflow.com" target="_blank">Home</Link>
 <Link href="https://discover-two.vercel.app" target="_blank">Discover</Link>
 <Link href="https://studio-one-sigma.vercel.app" target="_blank">Studio</Link>
 <Link href="https://webxr-3d.vercel.app" target="_blank">WebXR</Link>
@@ -147,72 +147,17 @@ export default function Home() {
 				</div>
 
 				<div
-					className='w-1/2'
-					style={{
-						backgroundImage: 'url("./landing.png")',
-						backgroundSize: 'cover',
-						backgroundPosition: 'center',
-						position: 'relative',
-					}}
+					className='w-1/2' style={{marginTop: '200px', marginLeft:'50px'}}
 				>
-					<img
-						src='./image 4.png'
-						alt='Top Left'
-						style={{
-							position: 'absolute',
-							top: '100px',
-							left: '40px',
-							width: '280px',
-							height: '280px',
-						}}
-					/>
-					<img
-						src='./image 6.png'
-						alt='Top Right'
-						style={{
-							position: 'absolute',
-							top: '100px',
-							right: '40px',
-							width: '280px',
-							height: '280px',
-						}}
-					/>
-					<img
-						src='./image 8.png'
-						alt='Bottom Left'
-						style={{
-							position: 'absolute',
-							bottom: '40px',
-							left: '40px',
-							width: '280px',
-							height: '280px',
-						}}
-					/>
-
-					<img
-						src='./image 7.png'
-						alt='Overlay'
-						style={{
-							position: 'absolute',
-							bottom: '40px',
-							left: '40px',
-							width: '280px',
-							height: '300px',
-							marginBottom: '20px',
-						}}
-					/>
-
-					<img
-						src='./image 5.png'
-						alt='Bottom Right'
-						style={{
-							position: 'absolute',
-							bottom: '40px',
-							right: '40px',
-							width: '280px',
-							height: '280px',
-						}}
-					/>
+					<iframe
+        width="560"
+        height="315"
+        src={`https://www.youtube.com/embed/6X05hRRwRgo?autoplay=1`}
+        frameBorder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+					
 				</div>
 			</div>
 

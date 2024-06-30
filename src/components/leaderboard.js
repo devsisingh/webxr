@@ -58,7 +58,7 @@ const Leaderboard = () => {
       </div>
 
       <div className='mt-10 flex' style={{ gap: '40px', flexWrap: 'wrap', justifyContent:'center' }}>
-        {avatar?.slice(0, 8).map((nft, index) => (
+        {avatar?.map((nft, index) => (
           <Avatars key={index} nft={nft} />
         ))}
       </div>
