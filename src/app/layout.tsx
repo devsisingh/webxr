@@ -18,8 +18,8 @@ const fontSans = FontSans({
 	variable: '--font-sans',
 })
 export const metadata: Metadata = {
-	title: 'Myriadflow Discover',
-	description: 'Discover Phygital NFTs',
+	title: 'Phygital WebXR',
+	description: 'Myriadflow WebXR Experience',
 }
 
 export default function RootLayout({
