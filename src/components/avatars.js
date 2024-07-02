@@ -7,7 +7,7 @@ const HotNftCard = ({ nft }) => {
   
   return (
       <div style={{ position: "relative", display: "inline-block" }}>
-        <Link href={`/nfts/${nft.id}`}>
+        {/* <Link href={`/nfts/${nft.id}`}> */}
           <div
             style={{
               width: "330px",
@@ -24,7 +24,7 @@ const HotNftCard = ({ nft }) => {
       />
                 
           </div>
-        </Link>
+        {/* </Link> */}
       </div>
     );
 }

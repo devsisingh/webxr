@@ -21,7 +21,8 @@ const Leaderboard = () => {
 
 		console.log("avatar", avatardata);
 
-    setAvatar(avatardata);
+    // setAvatar(avatardata);
+    setAvatar([...avatardata].reverse());
 	}
 
 	useEffect(() => {
