@@ -57,8 +57,11 @@ const Leaderboard = () => {
         </div>
       </div>
 
+      <div style={{textAlign: "center",
+            fontSize:'40px', marginTop:'50px'}}>WebXR Xperiences live soon!</div>
+
       <div className='mt-10 flex' style={{ gap: '40px', flexWrap: 'wrap', justifyContent:'center' }}>
-        {avatar?.map((nft, index) => (
+        {avatar?.reverse().map((nft, index) => (
           <Avatars key={index} nft={nft} />
         ))}
       </div>
